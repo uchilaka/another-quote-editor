@@ -29,6 +29,24 @@ bin/rails db:setup
 bin/rails db:migrate
 ```
 
+### Starting your services 
+
+In the repo within a terminal, run the following command:
+
+```shell
+# Run this command in the repo
+docker compose up -d
+
+# To stop your services
+docker compose stop
+
+# To teardown your services 
+docker compose down --volume
+
+# Run this command to view the logs
+docker compose logs --follow --since=5m
+```
+
 ## Managing secrets
 
 ```shell
