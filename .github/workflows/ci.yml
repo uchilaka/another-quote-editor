@@ -58,7 +58,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby-version: [3.2.2]
+        ruby-version: [3.3.8]
         node-version: [22.x]
 
     services:
