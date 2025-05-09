@@ -1,0 +1,3 @@
+# See: https://mise.jdx.dev/environments/#env-directives
+[env]
+_.file = '.env.development'
