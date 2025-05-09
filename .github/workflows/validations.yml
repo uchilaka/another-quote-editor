@@ -1,0 +1,20 @@
+name: Automated validations
+
+on:
+  # pull_request:
+  # push:
+  #   branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate-codeowners:
+    # For development reasons, this action is pinned to the `main` branch.
+    # However, we recommend that you choose a specific release to pin to.
+    # Consult https://github.com/cloudposse/github-action-validate-codeowners/releases for a list of available releases.
+    uses: cloudposse/github-action-validate-codeowners/.github/workflows/validate-codeowners-reusable.yml@0.2.1
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
