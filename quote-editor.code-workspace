@@ -5,10 +5,26 @@
     }
   ],
   "settings": {
-    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.fontSize": 12,
     "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
     "rubyLsp.rubyVersionManager": {
       "identifier": "asdf"
-    }
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "DavidAnson.vscode-markdownlint" // Use markdownlint as the formatter
+    },
+    // Adjusts the font size of the editor via (cmd + mouse wheel scroll)
+    "editor.mouseWheelZoom": true,
+    // Adjusts the font size of the terminal via (cmd + mouse wheel scroll)
+    "terminal.integrated.mouseWheelZoom": true
+  },
+  "extensions": {
+    "recommendations": [
+      "yzhang.markdown-all-in-one",
+      "DavidAnson.vscode-markdownlint" // Add markdownlint extension
+    ]
   }
 }

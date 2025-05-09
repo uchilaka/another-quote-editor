@@ -2,6 +2,13 @@
 
 ## Getting started
 
+### Port numbers
+
+> See this doc for known/common app ports: <https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers>
+
+- **Rails app**: `8400`
+- **Database**: `8432`
+
 ### macOS
 
 ```shell
@@ -14,7 +21,14 @@ yarn set version stable
 
 ### Windows
 
-_Add setup on windows steps here._
+### Package dependencies  
+
+- Install the Chocolatey package manager.
+- Run the following command in a Powershell 7 terminal:
+
+   ```pwsh
+   choco install chocolatey.config
+   ```
 
 ### Setting up the database role
 
@@ -29,7 +43,7 @@ bin/rails db:setup
 bin/rails db:migrate
 ```
 
-### Starting your services
+### Starting your services (cross-platform)
 
 In the repo within a terminal, run the following command:
 
@@ -47,6 +61,20 @@ docker compose down --volume
 docker compose logs --follow --since=5m
 ```
 
+## Using environment variables
+
+### Setup `mise` on Windows
+
+_Instructions to come_.
+
+### Setup `mise` on Unix systems
+
+Include the following line in your profile file (e.g. `~/.zshrc`):
+
+```shell
+eval "$(mise activate zsh)"
+```
+
 ## Managing secrets
 
 ```shell
@@ -56,3 +84,11 @@ VISUAL="code --wait" bin/rails credentials:edit
 # Editing secrets for a test environment
 VISUAL="code --wait" bin/rails credentials:edit --environment=test
 ```
+
+## Future work
+
+- Setup mise for dependency version management (i.e. ruby, node) on windows: <https://mise.jdx.dev/getting-started.html>
+
+## References
+
+- [12-factor](https://www.12factor.net/) - a framework for building modern web apps
