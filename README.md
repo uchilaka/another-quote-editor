@@ -14,7 +14,7 @@ yarn set version stable
 
 ### Windows
 
-_Add setup on windows steps here_
+_Add setup on windows steps here._
 
 ### Setting up the database role
 
@@ -29,7 +29,7 @@ bin/rails db:setup
 bin/rails db:migrate
 ```
 
-### Starting your services 
+### Starting your services
 
 In the repo within a terminal, run the following command:
 

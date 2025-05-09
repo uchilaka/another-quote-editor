@@ -5,6 +5,10 @@
     }
   ],
   "settings": {
-    "terminal.integrated.fontSize": 17
+    "terminal.integrated.fontSize": 17,
+    "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
+    "rubyLsp.rubyVersionManager": {
+      "identifier": "asdf"
+    }
   }
 }
