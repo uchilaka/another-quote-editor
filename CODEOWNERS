@@ -9,3 +9,5 @@
 *.yml @uchilaka
 config/* @uchilaka
 .github/* @uchilaka
+.docker/* @uchilaka
+*.code-workspace @uchilaka
