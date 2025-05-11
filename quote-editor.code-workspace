@@ -5,10 +5,10 @@
     }
   ],
   "settings": {
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 14,
     "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
     "rubyLsp.rubyVersionManager": {
-      "identifier": "asdf"
+      "identifier": "mise"
     },
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": "explicit"
@@ -33,9 +33,13 @@
   },
   "extensions": {
     "recommendations": [
+      "shopify.ruby-lsp",
       "jasonnutter.vscode-codeowners",
       "yzhang.markdown-all-in-one",
-      "DavidAnson.vscode-markdownlint" // Add markdownlint extension
+      "DavidAnson.vscode-markdownlint", // Add markdownlint extension
+      "atommaterial.a-file-icon-vscode",
+      "esbenp.prettier-vscode",
+      "rubocop.vscode-rubocop",
     ]
   }
 }

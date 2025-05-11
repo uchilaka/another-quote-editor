@@ -30,6 +30,23 @@ yarn set version stable
    choco install chocolatey.config
    ```
 
+- Run the following commands to setup project dependencies:
+
+  ```pwsh
+  # Preview available mise commands
+  mise --help
+  # View what dependencies will be installed and their configured versions
+  mise config
+  # Install dependencies
+  mise install
+  # List installed dependencies
+  mise ls
+  # List available dependencies (for a specific tool)
+  mise ls-remote ruby
+  # Hook mise into the MS Windows shell
+  echo 'mkdir -p ~/.config/powershell && mise activate pwsh | Out-String | Invoke-Expression' >> ~/.config/powershell/Microsoft.PowerShell_profile.ps1
+  ```
+
 ### Setting up the database role
 
 ```shell
