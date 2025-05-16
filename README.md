@@ -94,6 +94,24 @@ Include the following line in your profile file (e.g. `~/.zshrc`):
 eval "$(mise activate zsh)"
 ```
 
+### Setup `ridk`?
+
+> Should we need to do this if we're using `mise` to manage te ruby version?
+
+```shell
+ridk install
+```
+
+### Starting the app
+
+```shell
+# Install ruby dependencies
+bundle install
+
+# Start the app
+bundle exec rails s
+```
+
 ## Managing secrets
 
 ```shell
