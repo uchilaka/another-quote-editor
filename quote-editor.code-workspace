@@ -5,7 +5,7 @@
     }
   ],
   "settings": {
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 18,
     "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
     "rubyLsp.rubyVersionManager": {
       "identifier": "mise"

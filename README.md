@@ -35,6 +35,8 @@ yarn set version stable
   ```pwsh
   # Preview available mise commands
   mise --help
+  # Check the configuration for mise on your local system
+  mise doctor
   # View what dependencies will be installed and their configured versions
   mise config
   # Install dependencies
