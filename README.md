@@ -2,6 +2,13 @@
 
 ## Getting started
 
+### Port numbers
+
+> See this doc for known/common app ports: <https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers>
+
+- **Rails app**: `8400`
+- **Database**: `8432`
+
 ### macOS
 
 ```shell
@@ -14,13 +21,42 @@ yarn set version stable
 
 ### Windows
 
-_Add setup on windows steps here_
+### Package dependencies  
+
+- Install the Chocolatey package manager.
+- Run the following command in a Powershell 7 terminal:
+
+   ```pwsh
+   choco install chocolatey.config
+   ```
+
+- Run the following commands to setup project dependencies:
+
+  ```pwsh
+  # Preview available mise commands
+  mise --help
+  # Check the configuration for mise on your local system
+  mise doctor
+  # View what dependencies will be installed and their configured versions
+  mise config
+  # Install dependencies
+  mise install
+  # List installed dependencies
+  mise ls
+  # List available dependencies (for a specific tool)
+  mise ls-remote ruby
+  # Hook mise into the MS Windows shell
+  echo 'mkdir -p ~/.config/powershell && mise activate pwsh | Out-String | Invoke-Expression' >> ~/.config/powershell/Microsoft.PowerShell_profile.ps1
+  ```
 
 ### Setting up the database role
 
 ```shell
+# Connect to the container shell
+docker exec --env HOST_USER="${Env:UserName}" -it db.aqe.local /bin/bash
+
 # Create a role matching your local user account
-createuser --createdb  --no-createrole --superuser $USER -h 127.0.0.1 --port 5432 -U postgres
+createuser --createdb  --no-createrole --superuser $HOST_USER -h 127.0.0.1 --port 5432 -U postgres
 
 # Initialize the database 
 bin/rails db:setup
@@ -29,7 +65,7 @@ bin/rails db:setup
 bin/rails db:migrate
 ```
 
-### Starting your services 
+### Starting your services (cross-platform)
 
 In the repo within a terminal, run the following command:
 
@@ -47,6 +83,38 @@ docker compose down --volume
 docker compose logs --follow --since=5m
 ```
 
+## Using environment variables
+
+### Setup `mise` on Windows
+
+_Instructions to come_.
+
+### Setup `mise` on Unix systems
+
+Include the following line in your profile file (e.g. `~/.zshrc`):
+
+```shell
+eval "$(mise activate zsh)"
+```
+
+### Setup `ridk`?
+
+> Should we need to do this if we're using `mise` to manage te ruby version?
+
+```shell
+ridk install
+```
+
+### Starting the app
+
+```shell
+# Install ruby dependencies
+bundle install
+
+# Start the app
+bundle exec rails s
+```
+
 ## Managing secrets
 
 ```shell
@@ -56,3 +124,11 @@ VISUAL="code --wait" bin/rails credentials:edit
 # Editing secrets for a test environment
 VISUAL="code --wait" bin/rails credentials:edit --environment=test
 ```
+
+## Future work
+
+- Setup mise for dependency version management (i.e. ruby, node) on windows: <https://mise.jdx.dev/getting-started.html>
+
+## References
+
+- [12-factor](https://www.12factor.net/) - a framework for building modern web apps

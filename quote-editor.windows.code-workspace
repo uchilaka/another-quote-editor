@@ -8,6 +8,7 @@
     "terminal.integrated.fontSize": 16,
     "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
     "rubyLsp.rubyVersionManager": {
+      "miseExecutablePath": "C:\\ProgramData\\chocolatey\\bin\\mise.exe",
       "identifier": "mise"
     },
     "editor.codeActionsOnSave": {
@@ -29,6 +30,12 @@
       "**/.DS_Store": true,
       "**/Thumbs.db": true,
       "**/.ruby-lsp": true
+    },
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.profiles.windows": {
+      "Windows PowerShell": {
+        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+      }
     }
   },
   "extensions": {
