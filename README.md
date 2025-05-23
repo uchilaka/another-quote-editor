@@ -53,7 +53,7 @@ yarn set version stable
 
 ```shell
 # Connect to the container shell
-docker exec --env HOST_USER="${USER}" -it db.aqe.local /bin/bash
+docker exec --env HOST_USER="${Env:UserName}" -it db.aqe.local /bin/bash
 
 # Create a role matching your local user account
 createuser --createdb  --no-createrole --superuser $HOST_USER -h 127.0.0.1 --port 5432 -U postgres
