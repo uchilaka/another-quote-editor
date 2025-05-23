@@ -52,8 +52,11 @@ yarn set version stable
 ### Setting up the database role
 
 ```shell
+# Connect to the container shell
+docker exec --env HOST_USER="${USER}" -it db.aqe.local /bin/bash
+
 # Create a role matching your local user account
-createuser --createdb  --no-createrole --superuser $USER -h 127.0.0.1 --port 5432 -U postgres
+createuser --createdb  --no-createrole --superuser $HOST_USER -h 127.0.0.1 --port 5432 -U postgres
 
 # Initialize the database 
 bin/rails db:setup
