@@ -1,0 +1,7 @@
+# Ignore codeowners file - that will be validated through a 
+# seprate task (probably should have a pre-commit hook for it).
+# Rationale: there were false positives from some patterns that 
+# _seem_ like they should be valid codeowners patterns, as 
+# suggested by the CODEOWNERS documentation:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#example-of-a-codeowners-file
+CODEOWNERS
