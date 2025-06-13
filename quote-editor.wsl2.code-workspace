@@ -1,0 +1,50 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.fontSize": 16,
+    "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
+    "rubyLsp.rubyVersionManager": {
+      "miseExecutablePath": "/home/linuxbrew/.linuxbrew/bin/mise",
+      "identifier": "mise"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "DavidAnson.vscode-markdownlint" // Use markdownlint as the formatter
+    },
+    // Adjusts the font size of the editor via (cmd + mouse wheel scroll)
+    "editor.mouseWheelZoom": true,
+    // Adjusts the font size of the terminal via (cmd + mouse wheel scroll)
+    "terminal.integrated.mouseWheelZoom": true,
+    "prettier.ignorePath": ".prettierignore",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/.ruby-lsp": true
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.automationProfile.linux": {
+      "path": "/bin/zsh"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "shopify.ruby-lsp",
+      "jasonnutter.vscode-codeowners",
+      "yzhang.markdown-all-in-one",
+      "DavidAnson.vscode-markdownlint", // Add markdownlint extension
+      "atommaterial.a-file-icon-vscode",
+      "esbenp.prettier-vscode",
+      "rubocop.vscode-rubocop",
+    ]
+  }
+}
