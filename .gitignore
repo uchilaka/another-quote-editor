@@ -85,3 +85,6 @@ src/main/resources/dist/*
 
 # Ignore NPM dependencies
 /node_modules
+
+# To support cross-platform development
+Gemfile.lock

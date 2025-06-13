@@ -29,6 +29,10 @@
       "**/.DS_Store": true,
       "**/Thumbs.db": true,
       "**/.ruby-lsp": true
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.automationProfile.linux": {
+      "path": "/bin/zsh"
     }
   },
   "extensions": {
