@@ -47,6 +47,11 @@
       "atommaterial.a-file-icon-vscode",
       "esbenp.prettier-vscode",
       "rubocop.vscode-rubocop",
+      "ms-vscode.powershell",
+      "ms-azuretools.vscode-containers",
+      "dbaeumer.vscode-eslint",
+      "GitHub.copilot-chat",
+      "ms-vscode-remote.remote-wsl"
     ]
   }
 }
