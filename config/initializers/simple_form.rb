@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 #
 # Uncomment this and change the path if necessary to include your own
 # components.
@@ -63,14 +64,14 @@ SimpleForm.setup do |config|
             "border-red-500 focus:ring-red-500",
             "focus:border-red-500 dark:border-red-500",
             "text-red-900 dark:text-red-500",
-            "placeholder-red-700 dark:placeholder-red-500",
+            "placeholder-red-700 dark:placeholder-red-500"
           ].join(" "),
           valid_class: [
             "is-valid bg-green-50 dark:bg-gray-700",
             "text-green-900 dark:text-green-400",
             "placeholder-green-700 dark:placeholder-green-500",
             "focus:ring-green-500 focus:border-green-500",
-            "border-green-500 dark:border-green-500",
+            "border-green-500 dark:border-green-500"
           ].join(" ")
     # b.use :label_input
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
@@ -98,7 +99,7 @@ SimpleForm.setup do |config|
     "text-gray-900 dark:text-white border border-gray-300",
     "focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100",
     "font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2",
-    "dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700",
+    "dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
   ].join(" ")
 
   # Method used to tidy up errors. Specify any Rails Array method.
