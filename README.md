@@ -17,11 +17,14 @@ corepack enable
 
 # This sets the version of the yarn package manager for the project
 yarn set version stable
+
+# This installs system dependencies for the project
+brew bundle
 ```
 
 ### Windows
 
-### Package dependencies  
+#### Package dependencies  
 
 - Install the Chocolatey package manager.
 - Run the following command in a Powershell 7 terminal:
@@ -82,6 +85,8 @@ docker compose down --volume
 # Run this command to view the logs
 docker compose logs --follow --since=5m
 ```
+
+To start all service dependendencies in development, run: `goreman -f Procfile.dev start`.
 
 ## Using environment variables
 
