@@ -85,6 +85,13 @@ docker compose down --volume
 # Run this command to view the logs
 docker compose logs --follow --since=5m
 ```
+Starts up dockerized services (eg. postgres database).
+
+```shell
+#To start the rest of your application services
+goreman start -f Procfile.dev
+
+```
 
 To start all service dependendencies in development, run: `goreman -f Procfile.dev start`.
 
