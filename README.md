@@ -89,7 +89,7 @@ Starts up dockerized services (eg. postgres database).
 
 ```shell
 #To start the rest of your application services
-goreman start -f Procfile.dev
+goreman -f Procfile.dev start
 
 ```
 
