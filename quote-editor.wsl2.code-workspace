@@ -8,6 +8,7 @@
     "terminal.integrated.fontSize": 16,
     "rubocop.commandPath": "${userHome}${pathSeparator}bin${pathSeparator}rubocop",
     "rubyLsp.rubyVersionManager": {
+      "miseExecutablePath": "/home/linuxbrew/.linuxbrew/bin/mise",
       "identifier": "mise"
     },
     "editor.codeActionsOnSave": {

@@ -1,5 +1,5 @@
 # another-quotes-editor
-
+Working through this Hot Rails tutorial --> (https://www.hotrails.dev/turbo-rails)
 ## Getting started
 
 ### Port numbers
