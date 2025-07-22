@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Development: frontend" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="build" />
+    </scripts>
+    <arguments value="--watch" />
+    <node-interpreter value="wsl://Ubuntu-24.04@/home/localadmin/.local/share/mise/installs/node/22.14.0/bin/node" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
