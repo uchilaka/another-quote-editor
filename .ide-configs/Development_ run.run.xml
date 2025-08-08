@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Development: run" type="CompoundRunConfigurationType">
+    <toRun name="tailwindcss:watch" type="CommandRunConfigurationType" />
+    <toRun name="Development: frontend" type="js.build_tools.npm" />
+    <toRun name="Development: quote-editor" type="RailsRunConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
